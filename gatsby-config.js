@@ -183,6 +183,21 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      resolve: "gatsby-source-wordpress-experimental",
+      options : {
+        url : "http://funky.buddybuddy.io/graphql",
+        type: {
+          Post: {
+            limit: 50
+          },
+        },
+        includedRoutes: [
+          "**/products",
+        ],
+      }
     }
   ]
 };
+
